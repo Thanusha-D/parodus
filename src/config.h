@@ -88,6 +88,7 @@ typedef struct
     char webpa_uuid[64];
     unsigned int flags;
     char local_url[124];
+    unsigned int max-queue-size;
     char partner_id[64];
 #ifdef ENABLE_SESHAT
     char seshat_url[128];

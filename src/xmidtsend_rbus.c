@@ -329,7 +329,8 @@ void sendXmidtEventToServer(wrp_msg_t * msg, rbusMethodAsyncHandle_t asyncHandle
 	int sendRetStatus = 1;
 	char *errorMsg = NULL;
 	int qos = 0;
-
+        
+	ParodusInfo("XmidtQsize is %d\n" , XmidtQsize);
 	notif_wrp_msg = (wrp_msg_t *)malloc(sizeof(wrp_msg_t));
 	if(notif_wrp_msg != NULL)
 	{
